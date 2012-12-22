@@ -1,5 +1,8 @@
 package com.lezend.components;
 
+import com.lezend.core.GameObject;
+import com.lezend.core.GameWorld;
+
 /**
  * Created with IntelliJ IDEA.
  * User: drewmalin
@@ -8,4 +11,5 @@ package com.lezend.components;
  * To change this template use File | Settings | File Templates.
  */
 public interface PhysicsComponent {
+    public abstract void update(GameObject gameObject, GameWorld gameWorld);
 }
