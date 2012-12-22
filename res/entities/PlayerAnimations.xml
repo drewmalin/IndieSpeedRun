@@ -1,0 +1,54 @@
+<file>
+<idle_south>
+    <frame>res/textures/is_0.png</frame>
+</idle_south>
+<idle_north>
+    <frame>res/textures/in_0.png</frame>
+</idle_north>
+<idle_east>
+    <frame>res/textures/ie_0.png</frame>
+</idle_east>
+<idle_west>
+    <frame>res/textures/iw_0.png</frame>
+</idle_west>
+<walk_north>
+    <speed>50000000</speed>
+    <frame>res/textures/n_0.png</frame>
+    <frame>res/textures/n_1.png</frame>
+    <frame>res/textures/n_2.png</frame>
+    <frame>res/textures/n_3.png</frame>
+    <frame>res/textures/n_4.png</frame>
+    <frame>res/textures/n_5.png</frame>
+    <frame>res/textures/n_6.png</frame>
+    <frame>res/textures/n_7.png</frame>
+</walk_north>
+<walk_south>
+    <speed>50000000</speed>
+    <frame>res/textures/s_0.png</frame>
+    <frame>res/textures/s_1.png</frame>
+    <frame>res/textures/s_2.png</frame>
+    <frame>res/textures/s_3.png</frame>
+    <frame>res/textures/s_4.png</frame>
+    <frame>res/textures/s_5.png</frame>
+    <frame>res/textures/s_6.png</frame>
+    <frame>res/textures/s_7.png</frame>
+</walk_south>
+<walk_east>
+    <speed>50000000</speed>
+    <frame>res/textures/e_0.png</frame>
+    <frame>res/textures/e_1.png</frame>
+    <frame>res/textures/e_2.png</frame>
+    <frame>res/textures/e_3.png</frame>
+    <frame>res/textures/e_4.png</frame>
+    <frame>res/textures/e_5.png</frame>
+</walk_east>
+<walk_west>
+    <speed>50000000</speed>
+    <frame>res/textures/w_0.png</frame>
+    <frame>res/textures/w_1.png</frame>
+    <frame>res/textures/w_2.png</frame>
+    <frame>res/textures/w_3.png</frame>
+    <frame>res/textures/w_4.png</frame>
+    <frame>res/textures/w_5.png</frame>
+</walk_west>
+</file>

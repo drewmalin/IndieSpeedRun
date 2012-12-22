@@ -1,0 +1,24 @@
+from com.orbit.core import EntityScript
+import Level3
+
+class Entity(EntityScript):
+    
+    def __init__(self):
+        self.data = {}
+
+    def setPosition(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+        
+    def onInteract(self):
+        
+        if ('mass' not in self.data.keys()):
+            if (self.x >= 153 and self.x <= 163):
+                if (self.y >= 156 and self.y <= 166):
+                    ret = Level3.update(1)
+                    if (ret == True):
+                        self.data['mass'] = 1
+                        self.data['destroyOther'] = ['res/entities/3/Door3_1.xml', 'res/entities/3/Door3_2.xml']
+
+        return self.data

@@ -1,0 +1,93 @@
+<window>
+	<x>100</x>
+	<y>100</y>
+	<width>400</width>
+	<height>400</height>
+	<backgroundColor>.83 .83 .83 1</backgroundColor>
+	<messageBox>
+		<x>150</x>
+		<y>10</y>
+		<width>70</width>
+		<height>30</height>
+		<backgroundColor>0 0 0 1</backgroundColor>
+		<fontName>Times New Roman</fontName>
+		<fontSize>24</fontSize>
+		<fontColor>white</fontColor>
+		<message>Paused</message>
+	</messageBox>
+	<button>
+		<name>resume</name>
+		<x>10</x>
+		<y>100</y>
+		<width>70</width>
+		<height>30</height>
+		<backgroundColor>0 0 0 1</backgroundColor>
+		<messageBox>
+			<x>3</x>
+			<y>3</y>
+			<width>64</width>
+			<height>24</height>
+			<backgroundColor>.2 .2 .2 1</backgroundColor>
+			<fontName>Times New Roman</fontName>
+			<fontSize>20</fontSize>
+			<fontColor>white</fontColor>
+			<message>Resume</message>
+		</messageBox>
+		<onHover>
+			<backgroundColor>.98 .98 .82 1</backgroundColor>
+		</onHover>
+	</button>
+    <button>
+        <name>save</name>
+        <x>10</x>
+        <y>150</y>
+        <width>95</width>
+        <height>30</height>
+        <backgroundColor>0 0 0 1</backgroundColor>
+        <messageBox>
+            <x>3</x>
+            <y>3</y>
+            <width>89</width>
+            <height>24</height>
+            <backgroundColor>.2 .2 .2 1</backgroundColor>
+            <fontName>Times New Roman</fontName>
+			<fontSize>20</fontSize>
+			<fontColor>white</fontColor>
+			<message>Save</message>
+        </messageBox>
+        <onHover>
+			<backgroundColor>.98 .98 .82 1</backgroundColor>
+		</onHover>
+    </button>
+	<button>
+		<name>quit</name>
+		<x>10</x>
+		<y>200</y>
+		<width>95</width>
+		<height>30</height>
+		<backgroundColor>0 0 0 1</backgroundColor>
+		<messageBox>
+			<x>3</x>
+			<y>3</y>
+			<width>89</width>
+			<height>24</height>
+			<backgroundColor>.2 .2 .2 1</backgroundColor>
+			<fontName>Times New Roman</fontName>
+			<fontSize>20</fontSize>
+			<fontColor>white</fontColor>
+			<message>Quit Game</message>
+		</messageBox>
+		<onHover>
+			<backgroundColor>.98 .98 .82 1</backgroundColor>
+			<messageBox>
+				<width>42</width>
+				<height>14</height>
+				<backgroundColor>.2 .2 .2 1</backgroundColor>
+				<fontName>Times New Roman</fontName>
+				<fontSize>12</fontSize>
+				<fontColor>white</fontColor>
+				<message>Careful!</message>
+			</messageBox>
+		</onHover>
+	</button>
+</window>

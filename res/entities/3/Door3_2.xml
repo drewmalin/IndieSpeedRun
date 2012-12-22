@@ -1,0 +1,7 @@
+<entity>
+    <width>30</width>
+    <height>30</height>
+    <mass>1</mass>
+    <lightRadius>0</lightRadius>
+    <animationFile>res/entities/BoxAnimations.xml</animationFile>
+</entity>

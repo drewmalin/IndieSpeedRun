@@ -3,7 +3,12 @@ package com.lezend.player;
 import com.lezend.components.GraphicsComponent;
 import com.lezend.core.GameObject;
 import com.lezend.core.GameWorld;
+import com.lezend.utils.xml.Animation;
 import org.lwjgl.opengl.GL11;
+import org.newdawn.slick.opengl.Texture;
+
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,28 +19,59 @@ import org.lwjgl.opengl.GL11;
  */
 public class PlayerGraphicsComponent implements GraphicsComponent {
 
-    //Temporary: for testing purposes only
-    private int tempWidth = 10;
-    private int tempHeight = 10;
+    private int width;
+    private int height;
+    private float lightRadius;
+    private Texture currentFrame;
 
-    public PlayerGraphicsComponent() {
-        System.out.println("PlayerPhysicsComponent");
-        // load saved data (position, mass, etc.)
-    }
+    private ArrayList<Animation> animations;
+
+    public PlayerGraphicsComponent() {}
 
     @Override
     public void update(GameObject gameObject, GameWorld gameWorld) {
-        //Draw placeholder square
+
+        if (currentFrame != null) currentFrame.bind();
 
         GL11.glPushMatrix();
         GL11.glColor4f(1f, 1f, 1f, 1f);
-        GL11.glTranslatef(gameObject.x, gameObject.y, 0f);
+        GL11.glTranslatef(gameObject.getPosition().x, gameObject.getPosition().y, 0f);
         GL11.glBegin(GL11.GL_QUADS);
+            GL11.glTexCoord2f(0, 0);
             GL11.glVertex2f(0, 0);
-            GL11.glVertex2f(tempWidth, 0);
-            GL11.glVertex2f(tempWidth, tempHeight);
-            GL11.glVertex2f(0, tempHeight);
+
+            GL11.glTexCoord2f(1, 0);
+            GL11.glVertex2f(this.width, 0);
+
+            GL11.glTexCoord2f(1, 1);
+            GL11.glVertex2f(this.width, this.height);
+
+            GL11.glTexCoord2f(0, 1);
+            GL11.glVertex2f(0, this.height);
         GL11.glEnd();
         GL11.glPopMatrix();
+    }
+
+    @Override
+    public float getWidth() { return this.width; }
+
+    @Override
+    public void setWidth(int width) { this.width = width; }
+
+    @Override
+    public float getHeight() { return this.height; }
+
+    @Override
+    public void setHeight(int height) { this.height = height; }
+
+    @Override
+    public float getLightRadius() { return this.lightRadius; }
+
+    @Override
+    public void setLightRadius(float radius) { this.lightRadius = radius; }
+
+    @Override
+    public void setFrame(Texture t) {
+        currentFrame = t;
     }
 }

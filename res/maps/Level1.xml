@@ -1,0 +1,98 @@
+<map>
+    <tileDimensions>32</tileDimensions>
+    <lightLevel>1</lightLevel>
+    <tile>
+    	<id>0</id>
+    	<file>res/textures/ground_32.png</file>
+    </tile>
+    <tile>
+        <id>1</id>
+        <file>res/textures/door_32.png</file>
+    </tile>
+    <tile>
+        <id>2</id>
+        <file>res/textures/door_32_grey.png</file>
+    </tile>
+    <canvas>
+        -;-;-;-;-;-;-;-;-;0;0;-;-;-;-;-;-;-;-;-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;2,-;2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;2,-;2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;2,-;2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;2,-;2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;2,-;2,-;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;0;2,-;2,-;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;2,-;2,-;2,-;2,-;
+    	2,-;0;2,-;2,-;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;2,-;2,-;2,-;2,-;
+    	2,-;0;0;0;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;2,-;2,-;2,-;2,-;
+    	2,-;0;0;0;2,-;2,-;2,-;0;0;0;0;0;0;0;0;0;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    </canvas>
+    <player>
+        <position>302 761 0</position>
+    </player>
+    <entity>
+        <file>res/entities/1/Door1_1.xml</file>
+        <position>288 0 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/1/Lamp1_1.xml</file>
+        <position>551 531 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/1/Lamp1_2.xml</file>
+        <position>74 655 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/1/Lamp1_3.xml</file>
+        <position>549 146 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>257 659 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>355 659 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>302 620 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>241 513 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>87 417 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>177 417 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>64 296 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>111 256 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/BoxEntity.xml</file>
+        <position>32 673 0</position>
+    </entity>
+</map>

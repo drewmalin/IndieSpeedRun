@@ -1,0 +1,8 @@
+<entity>
+    <width>64</width>
+    <height>32</height>
+    <mass>1</mass>
+    <lightRadius>0</lightRadius>
+    <animationFile>res/entities/DoorAnimations.xml</animationFile>
+    <scriptFile>res/scripts/Door2_2.py</scriptFile>
+</entity>

@@ -1,0 +1,69 @@
+<map>
+    <tileDimensions>32</tileDimensions>
+    <tile>
+    	<id>0</id>
+    	<file>res/textures/ground_32.png</file>
+    </tile>
+    <tile>
+        <id>1</id>
+        <file>res/textures/door_32.png</file>
+    </tile>
+    <tile>
+        <id>2</id>
+        <file>res/textures/door_32_grey.png</file>
+    </tile>
+    <canvas>
+        -;-;-;-;-;-;-;-;-;0;0;-;-;-;-;-;-;-;-;-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;1;1;1;0;0;0;0;0;0;1;1;1;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2,-;
+    	2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;0;0;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;2,-;
+    </canvas>
+    <player>
+        <position>303 474 0</position>
+    </player>
+    <entity>
+        <file>res/entities/3/Door3_1.xml</file>
+        <position>288 31 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Door3_2.xml</file>
+        <position>321 31 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Lamp3_1.xml</file>
+        <position>131 325 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Lamp3_2.xml</file>
+        <position>165 325 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Lamp3_3.xml</file>
+        <position>195 382 0</position>
+    </entity>
+        <entity>
+        <file>res/entities/3/Lamp3_4.xml</file>
+        <position>131 222 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Lamp3_5.xml</file>
+        <position>165 222 0</position>
+    </entity>
+    <entity>
+        <file>res/entities/3/Lamp3_6.xml</file>
+        <position>205 222 0</position>
+    </entity>
+</map>

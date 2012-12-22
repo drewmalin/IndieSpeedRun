@@ -17,8 +17,7 @@ import org.lwjgl.input.Keyboard;
 public class PlayerInputComponent implements InputComponent {
 
     public PlayerInputComponent() {
-        System.out.println("PlayerInputComponent");
-        // load keyboard input?
+
     }
 
     @Override
@@ -28,32 +27,36 @@ public class PlayerInputComponent implements InputComponent {
          */
 
         if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_W,  Keyboard.KEY_A)) {
-            gameObject.x -= Globals.DIAGONAL;
-            gameObject.y -= Globals.DIAGONAL;
+            gameObject.stageChangePosition(-Globals.DIAGONAL, -Globals.DIAGONAL);
+            gameObject.loadNextAnimationFrame("walk_north");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_W, Keyboard.KEY_D)) {
-            gameObject.x += Globals.DIAGONAL;
-            gameObject.y -= Globals.DIAGONAL;
+            gameObject.stageChangePosition(Globals.DIAGONAL, -Globals.DIAGONAL);
+            gameObject.loadNextAnimationFrame("walk_north");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_A, Keyboard.KEY_S)) {
-            gameObject.x -= Globals.DIAGONAL;
-            gameObject.y += Globals.DIAGONAL;
+            gameObject.stageChangePosition(-Globals.DIAGONAL, Globals.DIAGONAL);
+            gameObject.loadNextAnimationFrame("walk_south");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_S, Keyboard.KEY_D)) {
-            gameObject.x += Globals.DIAGONAL;
-            gameObject.y += Globals.DIAGONAL;
+            gameObject.stageChangePosition(Globals.DIAGONAL, Globals.DIAGONAL);
+            gameObject.loadNextAnimationFrame("walk_south");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_W)) {
-            gameObject.y -= 1;
+            gameObject.stageChangePosition(0, -1);
+            gameObject.loadNextAnimationFrame("walk_north");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_A)) {
-            gameObject.x -= 1;
+            gameObject.stageChangePosition(-1, 0);
+            gameObject.loadNextAnimationFrame("walk_west");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_S)) {
-            gameObject.y += 1;
+            gameObject.stageChangePosition(0, 1);
+            gameObject.loadNextAnimationFrame("walk_south");
         }
         else if (InputManager.MANAGER.keysDepressed(Keyboard.KEY_D)) {
-            gameObject.x += 1;
+            gameObject.stageChangePosition(1, 0);
+            gameObject.loadNextAnimationFrame("walk_east");
         }
     }
 }
